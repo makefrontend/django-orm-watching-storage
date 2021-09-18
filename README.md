@@ -3,7 +3,7 @@
 
 ## Как установить
 * Установите `python 3.8.*`
-* `git clone https://github.com`
+* `git clone https://github.com/makefrontend/django-orm-watching-storage.git`
 * `pip install -r requirements.txt`
 
 ## Как настроить
