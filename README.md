@@ -21,7 +21,7 @@
 * `USE_L10N=var`
 * `LANGUAGE_CODE=var`
 * `TIME_ZONE=var`
-* `USE_TZ=var``
+* `USE_TZ=var`
 
 ## Как запустить
 В терминале перейдите в папку проекта и выполните команду `python manage.py runserver`. После этого сайт будет доступен по адресу `127.0.0.1:8000`
