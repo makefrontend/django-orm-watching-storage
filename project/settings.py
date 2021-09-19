@@ -1,12 +1,9 @@
 import os
 from dotenv  import  load_dotenv
-from environs import Env
 
 
 load_dotenv()
 
-env = Env()
-env.read_env()
 
 DATABASES={
     'default': {
@@ -19,16 +16,15 @@ DATABASES={
     }
 }
 
-INSTALLED_APPS = ['datacenter']
-
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = env.bool('DEBUG')
+DEBUG = os.getenv('DEBUG')
 
 ROOT_URLCONF = os.getenv('ROOT_URLCONF')
 
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
-print(ALLOWED_HOSTS)
+INSTALLED_APPS = ['datacenter']
+
+ALLOWED_HOSTS = ['*']
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES = [
@@ -40,10 +36,10 @@ TEMPLATES = [
 ]
 
 
-USE_L10N = env.bool('USE_L10N')
+USE_L10N = True
 
-LANGUAGE_CODE = os.getenv('LANGUAGE_CODE')
+LANGUAGE_CODE = 'ru-ru'
 
-TIME_ZONE = os.getenv('TIME_ZONE')
+TIME_ZONE = 'Europe/Moscow'
 
-USE_TZ = env.bool('USE_TZ')
+USE_TZ = True
