@@ -2,7 +2,7 @@
 Интерфейс для пульта охраны банка, в котором доступна информация о посетителях, времени пребывания с классификацией по подозрительными визитам. 
 
 ## Как установить
-* Установите `python 3.8.*`
+* У вас должен быть установлен `python 3.8.*`
 * `git clone https://github.com/makefrontend/django-orm-watching-storage.git`
 * `pip install -r requirements.txt`
 
@@ -18,10 +18,6 @@
 * `DEBUG=var`
 * `ROOT_URLCONF=var`
 * `ALLOWED_HOSTS=var`
-* `USE_L10N=var`
-* `LANGUAGE_CODE=var`
-* `TIME_ZONE=var`
-* `USE_TZ=var`
 
 ## Как запустить
-В терминале перейдите в папку проекта и выполните команду `python manage.py runserver`. После этого сайт будет доступен по адресу `127.0.0.1:8000`
+В терминале перейдите в папку проекта и выполните команду `python manage.py runserver 127.0.0.1:8000`. После этого сайт будет доступен по адресу `127.0.0.1:8000`
